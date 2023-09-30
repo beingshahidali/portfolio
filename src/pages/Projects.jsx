@@ -72,6 +72,16 @@ const Projects = () => {
               wbLink="https://github.com/beingshahidali/simplify-calc"
             />
           </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={simplifyCalc}
+              isBlog={false}
+              title=" Task Tracker"
+              description="Task tracker is a valuable tool for individuals seeking to organize their daily tasks, responsibilities, and goals effectively. This digital solution helps users keep track of what needs to be accomplished, ensuring they stay on top of their workload and maintain productivity."
+              ghLink="https://github.com/beingshahidali/task-tracker"
+              wbLink="https://github.com/beingshahidali/task-tracker"
+            />
+          </Col>
         
 
          
