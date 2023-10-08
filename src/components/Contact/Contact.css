@@ -1,4 +1,5 @@
 .contact-form{
+    
     padding: 0 3rem 0 3rem;
     display: flex;
     height: 80vh;
@@ -15,6 +16,7 @@
 
 .c-right{
     display: flex;
+    /* border: 1px solid white; */
     justify-content: center;
     position: relative;
     flex: 1;
@@ -44,6 +46,12 @@
     box-shadow: 0 0 9px #7500fa;
 }
 
+
+@media screen and (min-width: 900px) {
+    .form-element{
+        margin-top: 10rem;
+    }
+}
 input{
     background-color: var(--purple)
 }

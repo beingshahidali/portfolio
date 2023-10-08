@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import './Contact.css'
+import GoogleMapEmbed from './GoogleMapEmbed';
 
 const Contact = () => {
     const form = useRef();
@@ -47,13 +48,17 @@ const Contact = () => {
 
     return(
         <Container style={{paddingTop: '50px'}} >
+           
+           
             <Row >
             <Col md={6} className="c-left" >
             <h1 >Get in Touch</h1>
+              
             <h1 className="yellow">Contact me</h1>
+            <GoogleMapEmbed/>
             </Col>
             <Col md={6} className="c-right">
-                <form ref={form} onSubmit={sendEmail}>
+                <form ref={form} onSubmit={sendEmail} className='form-element'>
                 <input type="text" name="from_name" className="user"  placeholder="Name" onChange={handleChange}/>
                 <input type="email" name="reply_to" className="user" placeholder="Email" onChange={handleChange} />
                 <textarea name="message" className="user" placeholder="Message" onChange={handleChange} />
@@ -62,7 +67,9 @@ const Contact = () => {
                 <span className='done'>{done && "Thanks for contacting me and be sure i have recieved your mail. If you are testing this functionality then i am confirming this thing working perfectly fine. If you have any serious query then i will reply. Also if you need me, you can conatct me on Linkedin."}</span>
                 </form>
             </Col>
+            
             </Row>
+            
         </Container>
     )
 }
