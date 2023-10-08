@@ -1,4 +1,0 @@
-# your link goes here
-link = "https://github.com/beingshahidali/portfolio/blob/main/src/assets/Shahid_Ali_Resume.pdf"
-
-link.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
