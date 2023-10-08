@@ -52,13 +52,15 @@ const Contact = () => {
            
             <Row >
             <Col md={6} className="c-left" >
-            <h1 >Get in Touch</h1>
+            <h1 className="yellow">Get in Touch</h1>
               
-            <h1 className="yellow">Contact me</h1>
+            
             <GoogleMapEmbed/>
             </Col>
             <Col md={6} className="c-right">
+               
                 <form ref={form} onSubmit={sendEmail} className='form-element'>
+                <h1 style={{color:'white'}}>Contact me</h1>
                 <input type="text" name="from_name" className="user"  placeholder="Name" onChange={handleChange}/>
                 <input type="email" name="reply_to" className="user" placeholder="Email" onChange={handleChange} />
                 <textarea name="message" className="user" placeholder="Message" onChange={handleChange} />
