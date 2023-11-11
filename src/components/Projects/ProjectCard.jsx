@@ -18,12 +18,12 @@ const ProjectCard = (props) => {
           {props.isBlog ? "Blog" : "GitHub"}
         </Button>
 
+        {props.wbLink &&
         <Button style={{margin:"3px"}}variant="primary" href={props.wbLink} target="_blank">
-          <CgWebsite /> &nbsp;
-          {props.isBlog ? "Blog" : "Link"}
+            <CgWebsite /> &nbsp;
+            { props.isBlog ? "Blog" : "Link"}
         </Button>
-        {"\n"}
-        {"\n"}
+        }
 
         {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
 

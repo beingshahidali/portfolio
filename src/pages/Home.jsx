@@ -1,9 +1,16 @@
 import React from 'react'
 import { Container, Row, Col } from "react-bootstrap";
+// import homeLogo from '../assets/about.png'
 import homeLogo from '../assets/about.png'
 import Particle from '../components/Particle';
 import About from '../components/Home/About';
-import Type from '../components/Home/Type';
+import Type from '../components/Home/Type'; 
+
+
+import Skillset from './Skillset';
+import Projects from './Projects';
+import Contact from './Contact';
+
 
 const Home = () => {
   return (
@@ -41,7 +48,12 @@ const Home = () => {
           </Row>
         </Container>
       </Container>
+
+
       <About />
+      <Skillset/>  
+      <Projects/>
+      <Contact/>
     </section>
   );
 }

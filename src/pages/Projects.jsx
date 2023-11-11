@@ -36,7 +36,6 @@ const Projects = () => {
               title="Visual Sortify"
               description="Visual Sortify is a web application designed to help users understand and visualize various sorting algorithms. It provides an interactive platform where users can see how algorithms like bubble sort, merge sort, quicksort, and more work in real-time. "
               ghLink="https://github.com/beingshahidali/visual-sortify"
-              wbLink="https://github.com/beingshahidali/visual-sortify"
             />
           </Col>
           <Col md={4} className="project-card">
@@ -69,7 +68,6 @@ const Projects = () => {
 
               The React-based calculator employs component-driven development, enhancing code modularity and maintainability."
               ghLink="https://github.com/beingshahidali/simplify-calc"
-              wbLink="https://github.com/beingshahidali/simplify-calc"
             />
           </Col>
           <Col md={4} className="project-card">
