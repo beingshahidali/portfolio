@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import './Contact.css'
 import GoogleMapEmbed from './GoogleMapEmbed';
+// import { Link } from 'react-router-dom';
 
 const Contact = () => {
     const form = useRef();
@@ -48,6 +49,8 @@ const Contact = () => {
 
     return(
         <Container style={{paddingTop: '50px'}} >
+           
+           
            
            
             <Row >

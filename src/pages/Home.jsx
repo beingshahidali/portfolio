@@ -8,7 +8,7 @@ import Type from '../components/Home/Type';
 
 
 import Skillset from './Skillset';
-import Projects from './Projects';
+import ShowCase from './ShowCase';
 import Contact from './Contact';
 
 
@@ -52,7 +52,7 @@ const Home = () => {
 
       <About />
       <Skillset/>  
-      <Projects/>
+      <ShowCase/>
       <Contact/>
     </section>
   );

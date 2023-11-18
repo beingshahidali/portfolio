@@ -4,17 +4,15 @@ import ProjectCard from "../components/Projects/ProjectCard";
 import Particle from "../components/Particle";
 import bookourvans from "../assets/projects/bookourvans.png";
 import tictactoe from "../assets/projects/tictactoe.png";
-import visualSorting from "../assets/projects/visualSortify.png"
+// import visualSorting from "../assets/projects/visualSortify.png"
+import { Link } from "react-router-dom";
 import moviefy from "../assets/projects/moviefy.png"
-import simplifyCalc from "../assets/projects/simplifyCalc.png"
-import {Link } from "react-router-dom"
+import flowmate from "../assets/projects/flowmate.gif"
 const Projects = () => {
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
-     
-
         <h1 className="project-heading">
           Recent Top <strong className="yellow">Works </strong>
         </h1>
@@ -26,7 +24,7 @@ const Projects = () => {
             <ProjectCard
               imgPath={bookourvans}
               isBlog={false}
-              title="Book our vans"
+              title="Connect and Chat"
               description="This online ride-sharing platform boasts a responsive front-end design, complete with an admin panel built using React and Material-UI. With the integration of Google Maps API, users can easily access directions on the map. "
               ghLink="https://github.com/beingshahidali/van-life"
               wbLink="https://cheery-frangollo-3de57e.netlify.app"
@@ -34,9 +32,9 @@ const Projects = () => {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={visualSorting}
+              imgPath={flowmate}
               isBlog={false}
-              title="Visual Sortify"
+              title="Flow-mate"
               description="Visual Sortify is a web application designed to help users understand and visualize various sorting algorithms. It provides an interactive platform where users can see how algorithms like bubble sort, merge sort, quicksort, and more work in real-time. "
               ghLink="https://github.com/beingshahidali/visual-sortify"
             />
@@ -52,44 +50,19 @@ const Projects = () => {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={tictactoe}
-              isBlog={false}
-              title="Tic Tac Toe"
-              description="This a 2 player game ,created a captivating two-player Tic-Tac-Toe game with an intuitive interface and smooth gameplay. Engineered robust game logic and polished the user experience for seamless competitive entertainment."
-              ghLink="https://github.com/beingshahidali/van-life"
-              wbLink="https://ticx3.netlify.com"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={simplifyCalc}
-              isBlog={false}
-              title="Simplify Calc"
-              description="Performs operations like Addition, Multiplication, Subtraction, Division.. It offers a seamless and interactive experience for performing various arithmetic operations.
-
-              The React-based calculator employs component-driven development, enhancing code modularity and maintainability."
-              ghLink="https://github.com/beingshahidali/simplify-calc"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={simplifyCalc}
-              isBlog={false}
-              title=" Task Tracker"
-              description="Task tracker is a valuable tool for individuals seeking to organize their daily tasks, responsibilities, and goals effectively. This digital solution helps users keep track of what needs to be accomplished, ensuring they stay on top of their workload and maintain productivity."
-              ghLink="https://github.com/beingshahidali/task-tracker"
-              wbLink="https://github.com/beingshahidali/task-tracker"
-            />
-          </Col>
+         
+         
         
 
          
         </Row>
-       
       </Container>
-      {/* <Link to="/skillset"> Link</Link> */}
+     <div >
+     <Link to="/project" id="more-projects-container" >
+      <img width="30" height="30" src="https://img.icons8.com/sf-regular-filled/48/6900e5/visible.png" alt="visible" style={{marginBottom:"2px"}}/>    
+          View more Projects
+          </Link>
+     </div>
     </Container>
   )
 }

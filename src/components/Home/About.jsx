@@ -2,17 +2,19 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import LaptopImg from "../../assets/home-main.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+// import { Link } from "react-router-dom";
+// import {
+//   AiFillGithub,
+//   AiOutlineTwitter,
+//   AiFillInstagram,
+// } from "react-icons/ai";
+// import { FaLinkedinIn } from "react-icons/fa";
 
 
 const About = () => {
     return (
         <Container fluid className="home-about-section" id="about">
+          {/* <Link to="/contact">It's inside about</Link> */}
           <Container>
             <Row>
               <Col md={8} className="home-about-description">
