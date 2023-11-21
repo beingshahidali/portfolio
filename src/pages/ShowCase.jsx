@@ -49,12 +49,6 @@ const Projects = () => {
               wbLink="https://moviefy-sa08.netlify.app"
             />
           </Col>
-
-         
-         
-        
-
-         
         </Row>
       </Container>
      <div >
