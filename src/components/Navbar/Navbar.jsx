@@ -75,6 +75,7 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
+                
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
